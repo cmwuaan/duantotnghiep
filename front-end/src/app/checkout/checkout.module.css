@@ -1,0 +1,9 @@
+.CheckoutContainer {
+  display: flex;
+  padding: 40px 100px;
+}
+
+.Divider {
+  width: 1px;
+  background-color: #000000;
+}

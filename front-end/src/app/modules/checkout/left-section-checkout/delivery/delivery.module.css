@@ -1,0 +1,67 @@
+.SubTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.DeliveryContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.CountryField {
+  display: flex;
+  flex-direction: column;
+}
+
+.CountryField > label {
+  font-size: 12px;
+}
+
+.Select {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.RowField {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.ItemInput {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.InputIcon {
+  position: relative;
+}
+
+.Icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.8);
+}

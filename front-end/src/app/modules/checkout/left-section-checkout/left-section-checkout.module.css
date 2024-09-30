@@ -1,0 +1,96 @@
+.SectionContainer {
+  width: 100%;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Heading {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.ButtonsWrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.ButtonsWrapper button:nth-child(1) {
+  background-color: #095b6a;
+}
+
+.ButtonsWrapper button:nth-child(2) {
+  background-color: #eb9233;
+}
+
+.Button {
+  width: 168px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #000000;
+}
+
+.MoreContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.Divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.AccountContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.AccountContainer > label {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.Input {
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+  color: #000000;
+}
+
+.RowField {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.QuickLink {
+  font-size: 12px;
+  color: #000000;
+}
