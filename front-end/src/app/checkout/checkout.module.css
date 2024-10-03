@@ -3,7 +3,554 @@
   padding: 40px 100px;
 }
 
-.Divider {
+.DividerSection {
   width: 1px;
   background-color: #000000;
+}
+/* Left */
+.SectionContainer {
+  width: 100%;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.Heading {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.ButtonsWrapper {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.ButtonsWrapper button:nth-child(1) {
+  background-color: #095b6a;
+}
+
+.ButtonsWrapper button:nth-child(2) {
+  background-color: #eb9233;
+}
+
+.Button {
+  width: 168px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #000000;
+}
+
+.MoreContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.Divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.AccountContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.AccountContainer > label {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.Input {
+  width: 100%;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+  color: #000000;
+}
+
+.RowField {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.QuickLink {
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Delivery */
+.SubTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.DeliveryContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.CountryField {
+  display: flex;
+  flex-direction: column;
+}
+
+.CountryField > label {
+  font-size: 12px;
+}
+
+.Select {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.RowField {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.ItemInput {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.InputIcon {
+  position: relative;
+}
+
+.Icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Payment */
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.PaymentHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: start;
+}
+
+.SubTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.PaymentDescription {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.RowField {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.MethodRadio {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 10px;
+  justify-content: space-between;
+}
+
+.MethodContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.MethodWrapper {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+.InputContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.IconContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.Radio {
+  appearance: none; /* Remove default styles */
+  -webkit-appearance: none; /* For WebKit-based browsers */
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 20px; /* Set the size of the radio button */
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.Radio:checked {
+  background-color: white;
+}
+
+.Radio:checked::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.RadioLabel {
+  font-size: 12px;
+}
+
+.RadioIcon {
+  width: 40px;
+}
+
+.RowInput {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.ContentWrapper {
+  padding: 10px 20px 10px 20px;
+}
+
+/* Method Content */
+.MethodContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.RowInput {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.ItemInput {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.InputIcon {
+  position: relative;
+  width: 100%;
+}
+
+.Icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.CheckboxContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.Checkbox:checked {
+  background-color: black;
+}
+
+.Checkbox:checked::before {
+  content: '✔';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 50%;
+}
+
+.Label {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Right Section */
+.SectionContainer {
+  width: 100%;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ProductContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.DiscountContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.DiscountInput {
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.DiscountButton {
+  width: 160px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.PriceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.PriceRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.PriceRow p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.PriceRow h5 {
+  margin-bottom: 0;
+}
+
+.PriceValueWrapper {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+
+.RememberContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.SubTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.SaveInfoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+  height: 48px;
+  padding: 8px;
+}
+
+.SaveInfoWrapper label {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.Checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.Checkbox:checked {
+  background-color: black;
+}
+
+.Checkbox:checked::before {
+  content: '✔';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 50%;
+}
+
+.NoteWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.NoteWrapper p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.PayButton {
+  width: 100%;
+  height: 70px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+/* Product */
+.Divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+.ProductItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.ProductImage {
+  width: 66px;
+}
+
+.ProductContent {
+  width: 100%;
+}
+
+.ProductContent h3,
+.ProductContent p {
+  font-size: 12px;
+}
+
+.ProductPrice {
+  text-align: end;
 }
